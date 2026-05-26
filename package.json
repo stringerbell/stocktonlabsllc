@@ -7,8 +7,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "rm -rf dist && npm run build",
+    "deploy": "gh-pages -d dist -f",
+    "deploy:clean": "gh-pages-clean"
   },
   "dependencies": {
     "react": "^19.0.0",

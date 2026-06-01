@@ -7,6 +7,10 @@ export default function App() {
       </section>
       <footer className="footer">
         <span>&copy; {new Date().getFullYear()} Stockton Labs LLC</span>
+        <nav className="footer-links">
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms</a>
+        </nav>
       </footer>
     </main>
   );

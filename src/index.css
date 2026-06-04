@@ -29,12 +29,11 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding: 2rem;
 }
 
 .hero {
-  flex: 1;
+  min-height: 72vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -64,7 +63,40 @@ body {
   color: var(--accent);
 }
 
+.content {
+  max-width: 42rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.block h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.75rem;
+}
+
+.block p {
+  color: var(--fg);
+  line-height: 1.7;
+}
+
+.block a {
+  color: var(--accent);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.block a:hover {
+  text-decoration: underline;
+}
+
 .footer {
+  margin-top: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;

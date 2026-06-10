@@ -1,0 +1,101 @@
+:root {
+  --bg: #0b0c0f;
+  --fg: #e8e8ea;
+  --muted: #6b6e76;
+  --accent: #d4a373;
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+
+.legal {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+.legal-nav {
+  margin-bottom: 2.5rem;
+  font-size: 0.875rem;
+}
+
+.legal-nav a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.legal-nav a:hover {
+  color: var(--fg);
+}
+
+.legal h1 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.25rem;
+}
+
+.legal h1::after {
+  content: '.';
+  color: var(--accent);
+}
+
+.legal .org {
+  color: var(--fg);
+  font-weight: 500;
+  margin-top: 1.25rem;
+}
+
+.legal .effective {
+  color: var(--muted);
+  font-size: 0.9375rem;
+  margin-bottom: 2.5rem;
+}
+
+.legal h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-top: 2.25rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+.legal p {
+  margin-bottom: 1rem;
+  color: var(--fg);
+}
+
+.legal p + p {
+  margin-top: -0.25rem;
+}
+
+.legal strong {
+  color: var(--fg);
+  font-weight: 600;
+}
+
+.legal a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.legal a:hover {
+  text-decoration: underline;
+}
+
+.legal .address {
+  white-space: pre-line;
+  color: var(--fg);
+}
